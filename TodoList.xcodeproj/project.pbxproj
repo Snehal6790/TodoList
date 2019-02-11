@@ -13,7 +13,6 @@
 		36A2103721FEFD2E007D9DD6 /* TodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36A2103521FEFD2E007D9DD6 /* TodoList.xcdatamodeld */; };
 		36A2103921FEFD2F007D9DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A2103821FEFD2F007D9DD6 /* Assets.xcassets */; };
 		36A2103C21FEFD2F007D9DD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A2103A21FEFD2F007D9DD6 /* LaunchScreen.storyboard */; };
-		36A21044220052DD007D9DD6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A21043220052DD007D9DD6 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		36A2103821FEFD2F007D9DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36A2103B21FEFD2F007D9DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36A2103D21FEFD2F007D9DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36A21043220052DD007D9DD6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				36A210462200537D007D9DD6 /* Data Model */,
 				36A2102E21FEFD2E007D9DD6 /* AppDelegate.swift */,
 				36A2103D21FEFD2F007D9DD6 /* Info.plist */,
-				36A2103521FEFD2E007D9DD6 /* TodoList.xcdatamodeld */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -72,7 +69,7 @@
 		36A210462200537D007D9DD6 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				36A21043220052DD007D9DD6 /* Item.swift */,
+				36A2103521FEFD2E007D9DD6 /* TodoList.xcdatamodeld */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -173,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A21044220052DD007D9DD6 /* Item.swift in Sources */,
 				36A2103121FEFD2E007D9DD6 /* ToDoListViewController.swift in Sources */,
 				36A2102F21FEFD2E007D9DD6 /* AppDelegate.swift in Sources */,
 				36A2103721FEFD2E007D9DD6 /* TodoList.xcdatamodeld in Sources */,

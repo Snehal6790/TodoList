@@ -84,7 +84,9 @@ class ToDoListViewController: UITableViewController {
             
             //Mark more condition for text feild
             
-            let newItem = Item()
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            
+            let newItem = Item(context: context)
             newItem.title = textfeild.text!
             
             self.itemArray.append(newItem)
@@ -105,15 +107,14 @@ class ToDoListViewController: UITableViewController {
     
     func saveData(){
         
-        let encoder  = PropertyListEncoder()
+        
         do{
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
             
-            let data = try encoder.encode(self.itemArray)
-            try data.write(to:self.datafilePath!)
+            try context.save()
             
         }catch{
             
-            print("Error in printing data encoding")
             
             
         }
@@ -125,7 +126,7 @@ class ToDoListViewController: UITableViewController {
         if let data = try? Data(contentsOf: datafilePath!){
            let decoder = PropertyListDecoder()
             do{
-                itemArray = try decoder.decode([Item].self, from: data)
+//                itemArray = try? decoder.decode([Item].self, from: data)
             }catch{
                 
                 print("Error in decoding this data \(error)")
